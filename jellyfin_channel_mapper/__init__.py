@@ -18,7 +18,7 @@ from thefuzz import process
 load_dotenv()
 
 JELLYFIN_API_TOKEN = os.getenv("JELLYFIN_API_TOKEN")
-JELLYFIN_SERVER_ENDPOINT = "http://10.1.200.3:8096"
+JELLYFIN_SERVER_ENDPOINT = os.getenv("JELLYFIN_SERVER_ENDPOINT")
 
 
 def main():
